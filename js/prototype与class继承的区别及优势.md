@@ -40,9 +40,9 @@ class People extends Person {
 }
 console.log(new People('rose'))
 ```
-> 在class的继承中。子类自己的this对象必须通过父类的构造函数完成塑造，其this是继承父类来进行扩展的（所以在构造器中，必须要在super后才能用this）
-> 在子类的继承中，虽然通过super调用的是父类的构造器，但是返回的是子类的实例，即super内部的this指向子类的实例
-> super作为函数在构造器中调用时，实际上是Parent.prototype.constructor.call(this)
+> 在class的继承中。子类自己的this对象必须通过父类的构造函数完成塑造，其this是继承父类来进行扩展的（所以在构造器中，必须要在super后才能用this）<br />
+> 在子类的继承中，虽然通过super调用的是父类的构造器，但是返回的是子类的实例，即super内部的this指向子类的实例<br />
+> super作为函数在构造器中调用时，实际上是Parent.prototype.constructor.call(this)<br />
 > super作为对象使用时，super表示父类的原型对象（Parent.prototype），可以通过super.xxx()来进行调用，调用的函数内部的this指向的是当前子类
 
 # class中的__proto__
