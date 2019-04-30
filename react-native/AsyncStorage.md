@@ -72,10 +72,13 @@ async doRemove() {
 ```
 
 ### 其他api
-> mergeItem(key, value): 修改
-> clear: 清空所有
-> getALLkeys()
-> multiGet(keys:[], cb, result:[]): 多个获取
-> multiSet()
-> multiRemove()
-> multiMerge()
+> * mergeItem(key, value): 修改
+> * clear: 清空所有
+> * getALLkeys()
+> * multiGet(keys:[], cb, result:[]): 多个获取
+> * multiSet()
+> * multiRemove()
+> * multiMerge()
+
+### 注意
+> * AsyncStorage在将来会被移出react-native，然后可以从'@react-native-community/async-storage'这里install
